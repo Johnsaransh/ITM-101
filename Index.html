@@ -3,32 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saransh John's Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        .interest {
-            margin-top: 20px;
-            font-size: 1.2em;
-            color: #555;
-        }
-        .ai-quote {
-            font-style: italic;
-            color: #777;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Saransh John's Personal Page</h1>
-    <p class="interest">I am passionate about AI/ML, startups, and fitness!</p>
-    <p class="ai-quote">"The future belongs to those who build it with data and determination."</p>
+    <div class="game-container">
+        <h1>Memory Game</h1>
+        <div class="game-board" id="gameBoard">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+        <div class="victory-screen" id="victoryScreen">
+            <h2>Congratulations! You won!</h2>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
