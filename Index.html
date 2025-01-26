@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Add Two Numbers</title>
+    <script defer src="saranshjohn.js"></script>
 </head>
 <body>
-    <div class="game-container">
-        <h1>Memory Game</h1>
-        <div class="game-board" id="gameBoard">
-            <!-- Cards will be dynamically generated here -->
-        </div>
-        <div class="victory-screen" id="victoryScreen">
-            <h2>Congratulations! You won!</h2>
-            <button id="playAgainBtn">Play Again</button>
-        </div>
-    </div>
+    <h2>Add Two Numbers</h2>
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1">
 
-    <script src="script.js"></script>
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2">
+
+    <button onclick="addNumbers()">Add</button>
+
+    <h3>Result: <span id="result">0</span></h3>
 </body>
 </html>
